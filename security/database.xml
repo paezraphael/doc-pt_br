@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- EN-Revision: 0009ebd09f938e8f066779bb9bb774baed10bd8a Maintainer: leonardolara Status: ready --><!-- CREDITS: rafaelbernard,narigone,ae,leonardolara -->
+<!-- EN-Revision: f5b71e9150fddd14fa56c3c8f7197ef08e966c0b Maintainer: leonardolara Status: ready --><!-- CREDITS: rafaelbernard,narigone,ae,leonardolara,paezraphael -->
   <chapter xml:id="security.database" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
    <title>Segurança de Bancos de Dados</title>
 
@@ -26,7 +26,7 @@
     há ações para aumentar a proteção do banco de dados, menor a probabilidade
     de um atacante ter sucesso em expor ou abusar de qualquer informação
     guardada. Uma boa modelagem do esquema (schema) do banco de dados e da aplicação
-    para lidar com os maiores medos.
+    para lidar com as maiores preocupações.
    </simpara>
 
    <sect1 xml:id="security.database.design">
@@ -191,7 +191,7 @@ insert into pg_shadow(usename,usesysid,usesuper,usecatupd,passwd)
 ]]>
        </programlisting>
       </informalexample>
-      Se isso acontecesse, então o script daria de presente acesso de superusuário ao
+      Se isso acontecesse, então o script concederia acesso de superusuário ao
       atacante. Perceba que <literal>0;</literal> é para fornecer uma deslocamento válido
       para a consulta original e terminá-la.
     </para>

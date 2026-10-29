@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: ae725a44023db78b9f6e9d2a0baac8c8dc337d38 Maintainer: leonardolara Status: ready --><!-- CREDITS: narigone, fabioluciano -->
-<!-- splitted from ./index.xml, last change in rev 1.66 -->
+<!-- EN-Revision: f5b71e9150fddd14fa56c3c8f7197ef08e966c0b Maintainer: leonardolara Status: ready --><!-- CREDITS: narigone, fabioluciano, paezraphael -->
+<!-- split from ./index.xml, last change in rev 1.66 -->
   <chapter xml:id="security.errors" xmlns="http://docbook.org/ns/docbook">
    <title>Relatando Erros</title>
    <para>
@@ -67,23 +67,23 @@
     sistema) enviando dados incorretos, ele pode ser capaz de
     determinar que um sistema foi feito com PHP.
    </para>
-   <para>
-    Uma função de erro pode indicar se o sistema pode está executando um
-    engine de banco de dados específico, ou dar dicas de como uma página foi
+   <simpara>
+    Uma função de erro pode indicar se o sistema pode estar executando um
+    engine de banco de dados específico, ou como uma página é
     programada ou desenhada. Isso permite uma investigação profunda sobre
     portas abertas de bancos de dados, ou procurar por bugs específicos ou fraquezas
     de uma página. Enviando diferentes pedaços de dados ruins, por exemplo,
     um atacante pode determinar a ordem de autenticação em um script,
     (a partir da linha do erro) assim como sondar por exploits que
-    podem ser aproveitados em diferentes partes do script.
-   </para>
-   <para>
+    podem estar presentes em diferentes partes do script.
+   </simpara>
+   <simpara>
     Um erro geral do PHP ou do sistema de arquivos indicam quais permissões
     o servidor web tem, assim como a estrutura e organização dos
     arquivos no servidor web. Códigos de erros escritos pelo desenvolvedor podem
     agravar o problema, levando à exploração fácil de informação até então
     "escondida".
-   </para>
+   </simpara>
    <para>
     Existem três soluções principais para esse problema. A primeira é
     verificar exaustivamente todas as funções, e tentar compensar pelo volume dos
